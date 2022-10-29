@@ -28,7 +28,7 @@ jobs:
       - id: step2
         run: echo "test=world" >> $GITHUB_OUTPUT
       - id: bash
-        run: ./script.sh
+        run: ./.github/workflows/script.sh
   job2:
     runs-on: ubuntu-latest
     needs: job1
