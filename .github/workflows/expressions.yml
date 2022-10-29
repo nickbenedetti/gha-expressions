@@ -23,12 +23,13 @@ jobs:
       output2: ${{ steps.step2.outputs.test }}
       bash:    ${{ steps.bash.outputs.test }}
     steps:
+      - uses: actions/checkout@v3
       - id: step1
         run: echo "test=hello" >> $GITHUB_OUTPUT
       - id: step2
         run: echo "test=world" >> $GITHUB_OUTPUT
       - id: bash
-        run: ./.github/workflows/script.sh
+        run: .github/workflows/script.sh
   job2:
     runs-on: ubuntu-latest
     needs: job1
