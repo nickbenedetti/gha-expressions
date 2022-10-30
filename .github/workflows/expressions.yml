@@ -56,7 +56,6 @@ jobs:
           # ls ./github
           # ls ./github/workflows
           # .github/workflows/script.sh
-
       - run: |
           echo ${{ steps.bashjob.outputs.replace }}
           echo ${{ steps.bashjob.outputs.tr-no-newlines }}
