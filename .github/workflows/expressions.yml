@@ -48,6 +48,6 @@ jobs:
           .github/workflows/script.sh
 
       - run: |
-        echo ${{ steps.bashjob.outputs.replace }}
-        echo ${{ steps.bashjob.outputs.tr-no-newlines }}
+          echo ${{ steps.bashjob.outputs.replace }}
+          echo ${{ steps.bashjob.outputs.tr-no-newlines }}
 
